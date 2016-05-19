@@ -1,0 +1,34 @@
+<div class="small dimmable image">
+  <div class="ui dimmer">
+    <div class="content">
+      <div class="center">
+        {{sc-track-play track=track class="inverted"}}
+      </div>
+    </div>
+  </div>
+  <img src="{{artworkURL}}">
+</div>
+<div class="content">
+  <span class="right floated">
+    <a class="ui tag label">{{track.genre}}</a>
+  </span>
+  <div class="header">
+    {{track.title}}
+  </div>
+  <div class="meta">
+    <span class="owner">{{track.user.username}}</span>
+    <span class="duration">
+      <i class="wait icon"></i> {{humanDuration}}
+    </span>
+  </div>
+  <div class="extra">
+    <i class="play icon"></i>
+    {{track.playback_count}}
+     -
+    <i class="heart icon"></i>
+    {{track.favoritings_count}}
+     -
+    <i class="cloud download icon"></i>
+    {{track.download_count}}
+  </div>
+</div>

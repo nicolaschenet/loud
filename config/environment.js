@@ -16,6 +16,8 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+      SC_CLIENT_ID: 'ae55835c7ac24742a19c31d33c598576',
+      SC_REDIRECT_URI: 'http://localhost:4200/callback.html'
     }
   };
 

@@ -1,6 +1,7 @@
 /*jshint node:true*/
 /* global require, module */
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
+var bower_directory = 'bower_components/';
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
@@ -19,6 +20,8 @@ module.exports = function(defaults) {
   // modules that you would like to import into your application
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
+
+  app.import(bower_directory + 'moment/moment.js');
 
   return app.toTree();
 };
